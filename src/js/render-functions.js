@@ -4,6 +4,7 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 const gallery = document.querySelector('.gallery');
 const lightbox = new SimpleLightbox('.gallery a');
 const loader = document.querySelector('.loader');
+const btnLoadMore = document.querySelector('.js-load-more');
 
 export function createGallery(images) {
   const markup = images
@@ -48,10 +49,11 @@ export function showLoader() {
 export function hideLoader() {
   loader.classList.remove('is-visible');
 }
-//
-//
-//
-//  Ця функція повинна приймати масив images, створювати HTML-розмітку для галереї, додавати її в контейнер галереї та викликати метод екземпляра SimpleLightbox refresh(). Нічого не повертає.
-// clearGallery(). Ця функція нічого не приймає та повинна очищати вміст контейнера галереї. Нічого не повертає.
-// showLoader(). Ця функція нічого не приймає, повинна додавати клас для відображення лоадера. Нічого не повертає.
-// hideLoader(). Ця функція нічого не приймає, повинна прибирати клас для відображення лоадера. Нічого не повертає.
+
+export function showLoadMoreButton() {
+  btnLoadMore.classList.add('load-more-hiden');
+}
+
+export function hideLoadMoreButton() {
+  btnLoadMore.classList.remove('load-more-hiden');
+}

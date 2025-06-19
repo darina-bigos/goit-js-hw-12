@@ -232,3 +232,30 @@ input:focus {
   color: #333;
   justify-content: space-between;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.js-load-more {
+  display: none;
+}
+
+.load-more-hiden {
+  margin-top: 32px;
+  display: block;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 125px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  /* line-height: 24px; */
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
